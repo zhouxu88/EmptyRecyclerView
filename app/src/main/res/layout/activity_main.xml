@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zmwl.recyclerviewemptyview.MainActivity">
+
+    <Button
+        android:id="@+id/deleteAll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除所有数据"/>
+
+    <Button
+        android:id="@+id/insert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加10条数据"
+        android:layout_below="@id/deleteAll_btn"/>
+
+   <com.zmwl.recyclerviewemptyview.EmptyRecyclerView
+       android:id="@+id/emptyRecyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/insert_btn"/>
+
+    <!--Empty提示图-->
+    <ImageView
+        android:id="@+id/empty_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        android:src="@mipmap/no_data"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
