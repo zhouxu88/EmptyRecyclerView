@@ -69,6 +69,7 @@ public class EmptyRecyclerView extends RecyclerView {
         checkIfEmpty();
     }
 
+    //设置没有内容时，提示用户的空布局
     public void setEmptyView(View emptyView) {
         this.emptyView = emptyView;
         checkIfEmpty();
